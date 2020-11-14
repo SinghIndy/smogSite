@@ -1,0 +1,273 @@
+@font-face{
+    font-family: RacingSansOne;
+    src: url('fonts/Racing_Sans_One/RacingSansOne-Regular.ttf');
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: RacingSansOne, Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f4f4f4;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background: black;
+}
+.nav-link, .navbar-brand{
+    color: #f4f4f4; cursor: pointer;
+}
+
+.nav-link{
+    margin-right: 1em;
+}
+
+.nav-link:hover{
+    background: #f4f4f4;
+    color: red;
+}
+
+.navbar-toggler{
+    background: #fff;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-brand{
+    color: #d61212;
+}
+.navbar-brand p{
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+}
+.navbar-brand img{
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+
+}
+.navbar a:hover{
+    color: red;
+}
+.buffer{
+    height: 2em;
+}
+
+
+/* Header style */
+.header{
+    background-image: url(images/shop_rs.jpg);
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 50px;
+}
+
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    padding: 0em 1em;
+}
+
+.description h1{
+    color: #d61212;
+}
+.description p{
+    color: black;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+.description button{
+    border: 1px solid #d61212;
+    background: #d61212;
+    color: #fff;
+}
+.description button a:hover{
+    color: white;
+}
+
+
+/* Location */
+.location{
+    padding: 50px 10px;
+}
+.location h1{
+    margin: 1em;
+}
+
+.place{
+    color: #d61212;
+}
+
+.place ul li{
+    color: black;
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+map.frame{
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
+
+/* Services */
+.services{
+    margin: 50px 0;
+    padding: 0px 10px;
+}
+
+.services h1{
+    margin: 1em;
+}
+.services ul li{
+    margin-left: 30px;
+}
+
+.service_text{
+    font-size: 18px;
+}
+.card-body ul li{
+    margin-left: 15px;
+}
+
+/* About */
+.about{
+    margin: 50px 0;
+    padding: 1em;
+    position: relative;
+}
+
+.about h1{
+    color: #d61212;
+    margin: 1em;
+}
+
+.about span{
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+
+.about .desc{
+    padding: 2em;
+    border-left: 4px solid black;
+}
+
+.about .desc p{
+    line-height: 2;
+    color: #888;
+}
+
+/* Contact Form */
+.contact-form{
+    margin: 50px 0;
+}
+
+.contact-form .btn{
+    border: 1px solid #d61212;
+    background: #d61212;
+    color: #fff;
+}
+
+.contact-form h1{
+    margin: 1em;
+}
+.contact-form .btn:hover{
+    background: darkgray;
+    border: 1px darkgray;
+    font-weight: 700;
+}
+.reviews a{
+    font-size: 20px;
+}
+.reviews a:hover{
+    color: #d61212;
+}
+
+/* Form Specific */
+label.error { 
+    color: red; 
+    clear: none; 
+    width: 200px; 
+    padding-left: 10px; 
+    font-size: 11px; 
+}
+
+/* headers */
+.location h1, .services h1, .about h1, .contact-form h1{
+    text-decoration: underline;
+}
+
+/* Footer */
+
+#footer{
+    background-color: #999;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+}
+
+.sitemap{
+    color: black;
+}
+
+
+/* Colors */
+.red{
+    color: #d61212;
+    margin: 0;
+}
+.black{
+    color: black;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.white{
+    color: white;
+}
+
+
+@media (max-width: 993px) {
+    .navbar-brand img{
+        display: none;
+    }
+}
+
+@media (max-width:767px){
+    .description{
+        top: 15%;
+    }
+    .description p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 764px){
+    .services .container .row div .img-mobile-none{
+        display: none;
+    }
+}
